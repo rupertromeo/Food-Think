@@ -1,0 +1,19 @@
+{
+  "name": "food-think",
+  "version": "1.0.0",
+  "description": "Food-Think",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.34.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Project 2 Team",
+  "license": "ISC"
+}
