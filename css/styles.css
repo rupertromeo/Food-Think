@@ -1,0 +1,132 @@
+body { padding-top: 70px;}
+/* ------------------Nav Bar CSS Start-------------------- */
+/* #nav {
+    background-color: #5ca4a9;
+    position: static;
+    right: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 0;
+    border: 0;
+} */
+/* ------------------Nav Bar CSS End-------------------- */
+
+/* ------------------Signup/in Buttons CSS Start-------------------- */
+.btn {
+    float: left;
+    margin-left: 5px;
+}
+
+#newBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 70px;
+}
+
+#signBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 70px;
+}
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+/* ------------------Jumbotron CSS Start-------------------- */
+.jumbotron {
+    padding-top: 0; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* jumbotron background photo */
+#jumbo {
+    background: url('../images/jumbo_back.png');
+    height: 400px;
+    width: 100%;
+    max-height: 50%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+/* Jumbotron Text "Food Think" */
+#food {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 105px;
+    color: #ed6a5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-right: 370px;
+    letter-spacing: -2px;
+}
+/* ------------------Jumbotron CSS End-------------------- */
+
+/* ------------------About Us CSS Start-------------------- */
+/* Container for lorem ipsum text */
+#about-us {
+    margin-top: 70px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 90px;
+}
+
+#about-header {
+    font-family: 'Cantarell', sans-serif;
+    color: #ed6a5a;
+}
+
+/* Lorem ipsum text */
+ .text{
+    font-family: 'Cantarell', sans-serif;
+    line-height: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+    text-align: justify;
+    color: #5ca4a9;
+} 
+/* ------------------About Us CSS End-------------------- */
+
+/* ------------------Thumbnail CSS Start-------------------- */
+.thumbnail {
+    padding: 70px;
+    display: inline-block;  
+    vertical-align:top;  
+    margin:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.stock-photos{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px; 
+}
+
+.resize {
+    width: 450px !important;
+	height: 300px !important;
+}
+
+.item {
+    text-align: center;
+}
+/* ------------------Thumbnail CSS End-------------------- */
+
+/* ------------------Footer CSS Start-------------------- */
+.footer {
+/* position: absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #5ca4a9;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+/* ------------------Footer CSS End-------------------- */
