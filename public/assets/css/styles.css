@@ -30,6 +30,14 @@ body { padding-top: 70px;}
     color: #e6ebe0;
     width: 70px;
 }
+
+#commentBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 120px;
+}
+
 /* ------------------Signup/in Buttons CSS End-------------------- */
 
 /* ------------------Jumbotron CSS Start-------------------- */
