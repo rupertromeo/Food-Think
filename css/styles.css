@@ -1,39 +1,38 @@
-body { padding-top: 70px;}
-/* ------------------Nav Bar CSS Start-------------------- */
-/* #nav {
-    background-color: #5ca4a9;
-    position: static;
-    right: 0;
-    top: 0;
-    width: 100%;
-    margin-bottom: 0;
-    border: 0;
-} */
-/* ------------------Nav Bar CSS End-------------------- */
+/* body { padding-top: 70px;} */
+
+.navigation {
+    margin-bottom: 5px;
+}
 
 /* ------------------Signup/in Buttons CSS Start-------------------- */
-.btn {
-    float: left;
+/* .btn {
     margin-left: 5px;
-}
+} */
 
 #newBtn {
     background-color: #5ca4a9;
     border: unset;
     color: #e6ebe0;
-    width: 70px;
-}
-
-#signBtn {
-    background-color: #5ca4a9;
-    border: unset;
-    color: #e6ebe0;
-    width: 70px;
+    width: 120px;
+    height: 35px;
 }
 /* ------------------Signup/in Buttons CSS End-------------------- */
 
+#searchsub {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 120px;
+    height: 35px;
+}
 /* ------------------Jumbotron CSS Start-------------------- */
 .jumbotron {
+    margin-top: -20px;
     padding-top: 0; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -68,7 +67,7 @@ body { padding-top: 70px;}
 /* ------------------About Us CSS Start-------------------- */
 /* Container for lorem ipsum text */
 #about-us {
-    margin-top: 70px;
+    margin-top: 10px;
     margin-left: 350px;
     margin-right: 350px;
     margin-bottom: 90px;
