@@ -1,0 +1,115 @@
+body { padding-top: 20px;}
+
+/* ------------------Signup/in Buttons CSS Start-------------------- */
+#commentBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 100px;
+    height: 35px;
+}
+
+#signBtn {
+    background-color: white;
+    border: unset;
+    color: #5ca4a9;
+    width: 100px;
+    height: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5ca4a9;
+}
+
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+/* ------------------Signup/in Buttons CSS End-------------------- */
+#searchsub {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 120px;
+    height: 35px;
+}
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+
+#profImage {
+  width: 200px !important;
+  height: 200px !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#user {
+  margin-top: 50px;
+  margin-left: 20px;
+  color: #ed6a5a;
+}
+
+#heading{
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+#category {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+#reviews {
+  margin-left: 20px;
+  margin-bottom: 1px;
+  width: 200px;
+}
+.badge {
+  background-color: #ed6a5a;
+}
+
+#friends {
+  margin-top: 10px;
+  margin-bottom: 1px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+#favorites {
+  margin-left: 20px;
+  width: 200px;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #5ca4a9;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+/* CSS for new post form */
+#newPost {
+  margin-top: -15px;
+  width: 500px !important;
+  height: 200px !important;
+}
+#menuItem {
+  height: 15px;
+  margin-bottom: 10px;
+}
+#restaurant {
+  height: 15px;
+  margin-bottom: 10px;
+}
+#comments {
+  height: 30px;
+}
+#rating {
+  height: 25px;
+}

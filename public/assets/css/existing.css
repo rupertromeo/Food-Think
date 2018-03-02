@@ -1,0 +1,59 @@
+body { padding-top: 20px;}
+
+/* ------------------Header Buttons CSS Start-------------------- */
+#commentBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 100px;
+    height: 35px;
+}
+
+#signBtn {
+    background-color: white;
+    border: unset;
+    color: #5ca4a9;
+    width: 100px;
+    height: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5ca4a9;
+}
+
+#newBtn {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 100px;
+    height: 35px;
+}
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+/* ------------------Signup/in Buttons CSS End-------------------- */
+#searchsub {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    background-color: #5ca4a9;
+    border: unset;
+    color: #e6ebe0;
+    width: 120px;
+    height: 35px;
+}
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+/* ------------------Footer CSS Start-------------------- */
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #5ca4a9;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+/* ------------------Footer CSS End-------------------- */

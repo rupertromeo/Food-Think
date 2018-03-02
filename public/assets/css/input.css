@@ -1,31 +1,39 @@
-body { padding-top: 70px; }
-/* #nav {
-    background-color: #5ca4a9;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-} */
-
+body { padding-top: 20px; }
 
 /* ------------------Signup/in Buttons CSS Start-------------------- */
-.btn {
-    float: left;
-    margin-left: 5px;
-}
-
-#newBtn {
+#commentBtn {
     background-color: #5ca4a9;
     border: unset;
     color: #e6ebe0;
-    width: 70px;
+    width: 100px;
+    height: 35px;
 }
 
 #signBtn {
+    background-color: white;
+    border: unset;
+    color: #5ca4a9;
+    width: 100px;
+    height: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5ca4a9;
+}
+
+/* ------------------Signup/in Buttons CSS End-------------------- */
+
+/* ------------------Signup/in Buttons CSS End-------------------- */
+#searchsub {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#submit {
     background-color: #5ca4a9;
     border: unset;
     color: #e6ebe0;
-    width: 70px;
+    width: 120px;
+    height: 35px;
 }
 /* ------------------Signup/in Buttons CSS End-------------------- */
 
