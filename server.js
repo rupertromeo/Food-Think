@@ -6,6 +6,8 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var session = require("express-session");
+var passport = require("./config/passport");
 
 // Sets up the Express App
 // =============================================================
@@ -24,6 +26,10 @@ app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
+
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Routes
 // =============================================================
