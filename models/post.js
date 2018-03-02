@@ -1,3 +1,5 @@
+var bcrypt = require("bcrypt-nodejs");
+
 // name, username(e-mail), password, food, location, comment, rating (1 to 5 stars?), anything else
 
 module.exports = function(sequelize, DataTypes) {
@@ -62,6 +64,14 @@ module.exports = function(sequelize, DataTypes) {
         max: 5
       }
     }
+  });
+  //Check if unhashed password can be compared to stored password in DB
+  User.prototype.validPassword = function(password) {
+    return bcrypt.compareSync(password, this.password);
+  };
+  //This hashes a user password
+  User.hook("beforeCreate", function(user) {
+    user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
   return Post;
 };
