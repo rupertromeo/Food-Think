@@ -6,6 +6,8 @@
 // =============================================================
 var path = require("path");
 
+var auth = require("../config/middleware/auth");
+
 // Routes
 // =============================================================
 module.exports = function(app) {
