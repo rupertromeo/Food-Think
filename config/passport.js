@@ -10,9 +10,10 @@ passport.use(new LocalStrategy(
     },
     function(username, password, done) {
         //This is the log in function run during an attempt
-        db.User.findOne({
+        db.Post.findOne({
             where: {
-                username: username
+                username: username,
+                firstname: "blank"
             }
         }).then(function(dbUser) {
             //This checks for the username
@@ -43,5 +44,4 @@ passport.serializeUser(function(user, cb) {
   
   // Exporting our configured passport
   module.exports = passport;
-  
-    
+

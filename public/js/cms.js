@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  // This just does a GET request to figure out which user is logged in
+  // and updates the HTML on the page
+  $.get("/api/user_data").then(function(data) {
+    $(".member-name").text(data.username);
+  });
+
   // Gets an optional query string from our url (i.e. ?post_id=23)
   var url = window.location.search;
   var postId;
@@ -13,12 +19,14 @@ $(document).ready(function() {
   }
 
   // Getting jQuery references to the post body, title, form, and category select
-  var bodyInput = $("#body");
+  var userName = $(".member-name");
   var titleInput = $("#title");
-  var cmsForm = $("#cms");
-  var postCategorySelect = $("#category");
+  var bodyInput = $("#body");
+  var locationInput = $("#location");
+  var postCategorySelect = $("#rating");
   // Giving the postCategorySelect a default value
-  postCategorySelect.val("Personal");
+  postCategorySelect.val(0);
+  var cmsForm = $("#cms");
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", function handleFormSubmit(event) {
     event.preventDefault();
@@ -28,9 +36,14 @@ $(document).ready(function() {
     }
     // Constructing a newPost object to hand to the database
     var newPost = {
-      title: titleInput.val().trim(),
-      body: bodyInput.val().trim(),
-      category: postCategorySelect.val()
+      firstname: "notblank",
+      lastname: "notblank",
+      username: userName.text(),
+      password: "notblank",
+      fooditem: titleInput.val().trim(),
+      comment: bodyInput.val().trim(),
+      location: locationInput.val().trim(),
+      rating: postCategorySelect.val()
     };
 
     console.log(newPost);

@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      // unique: true,
       validate: {
         isEmail: true,
       }
@@ -66,11 +66,11 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   //Check if unhashed password can be compared to stored password in DB
-  User.prototype.validPassword = function(password) {
+  Post.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
   };
   //This hashes a user password
-  User.hook("beforeCreate", function(user) {
+  Post.hook("beforeCreate", function(user) {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
   return Post;
